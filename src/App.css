@@ -12,7 +12,8 @@
   row-gap: 2vmin;
 }
 
-.product-title {
+.product > * {
+  width: 100%;
   display: flex;
   justify-content: center;
 }

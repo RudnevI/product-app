@@ -3,7 +3,7 @@ import { Button } from "@mui/material";
 function Product({ productObject, deleteProductHandler }) {
   return (
     <div className="product">
-      <h3 className="product-title">{productObject.name}</h3>
+      <h3 className="product-title">{productObject.title}</h3>
       <Button
         variant="contained"
         color="error"
