@@ -1,3 +1,4 @@
+import { Button, Input, InputLabel } from "@mui/material";
 import { useState } from "react";
 
 function AddProductForm({ addProductHandler }) {
@@ -5,14 +6,21 @@ function AddProductForm({ addProductHandler }) {
 
   return (
     <div className="add-product-form">
-      <label htmlFor="productName">Название продукта</label>
-      <input
+      <InputLabel htmlFor="productName">Название продукта</InputLabel>
+      <Input
+        variant="filled"
         id="productName"
         type="text"
         onChange={(e) => setProductName(e.target.value)}
         value={productName}
-      ></input>
-      <button onClick={() => addProductHandler(productName)}>Добавить</button>
+      ></Input>
+      <Button
+        variant="contained"
+        color="success"
+        onClick={() => addProductHandler(productName)}
+      >
+        Добавить
+      </Button>
     </div>
   );
 }

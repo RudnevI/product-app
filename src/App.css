@@ -11,3 +11,8 @@
   flex-direction: column;
   row-gap: 2vmin;
 }
+
+.product-title {
+  display: flex;
+  justify-content: center;
+}
